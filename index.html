@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="All India Mobility Solution — mobility, transport, vehicle rental, logistics and mobility support solutions. Contact us for enquiries.">
+  <meta name="theme-color" content="#10243a">
+  <title>All India Mobility Solution | Connecting India</title>
+  <style>
+    :root{--navy:#10243a;--blue:#1769aa;--cyan:#27b6c7;--ink:#172536;--muted:#607184;--paper:#f5f8fb;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(16,36,58,.97);color:#fff;box-shadow:0 3px 16px #06172822}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:.5px;line-height:1.15}.brand span{display:block;color:#75dce4;font-size:11px;letter-spacing:2px;margin-top:5px}
+    nav{display:flex;gap:23px;align-items:center;font-size:14px}nav a{opacity:.92}nav a:hover{color:#75dce4}
+    .menu{display:none;background:none;border:1px solid #ffffff55;color:#fff;border-radius:8px;padding:8px 11px;font-size:20px}
+    .hero{background:radial-gradient(circle at 80% 20%,#1c6386 0,#153c5c 30%,#10243a 72%);color:#fff;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center;padding:82px 0 88px}
+    .eyebrow{color:#80e1e6;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:12px}
+    h1{font-size:clamp(38px,5vw,62px);line-height:1.08;margin:15px 0 20px;letter-spacing:-1.5px}
+    .hero p{font-size:18px;color:#d6e3ee;max-width:610px}
+    .actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:9px;font-weight:700;transition:.2s}
+    .btn-primary{background:#27b6c7;color:#082333}.btn-primary:hover{background:#70e0e5;transform:translateY(-2px)}
+    .btn-outline{border:1px solid #ffffff80;color:#fff}.btn-outline:hover{background:#ffffff15}
+    .hero-art{min-height:300px;position:relative;display:grid;place-items:center}
+    .orbit{width:min(360px,80vw);aspect-ratio:1;border:1px solid #ffffff3b;border-radius:50%;display:grid;place-items:center;position:relative;background:radial-gradient(circle,#2bb5c722,transparent 65%)}
+    .orbit:before,.orbit:after{content:"";position:absolute;border:1px dashed #8bdde766;border-radius:50%;inset:12%}
+    .orbit:after{inset:25%}
+    .mobility-icon{font-size:112px;filter:drop-shadow(0 18px 18px #0005)}
+    .float{position:absolute;background:#fff;color:#17314a;padding:10px 14px;border-radius:10px;font-size:13px;font-weight:700;box-shadow:0 10px 30px #0003}
+    .f1{top:12%;left:-2%}.f2{right:-3%;top:35%}.f3{bottom:8%;left:8%}
+    section{padding:76px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+    .section-head .eyebrow{color:var(--blue)}h2{font-size:clamp(28px,3.5vw,40px);line-height:1.15;margin:10px 0 12px;color:var(--navy)}
+    .section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
+    .card{background:#fff;border:1px solid #e4ebf1;border-radius:15px;padding:25px;box-shadow:0 8px 25px #17314a0a}
+    .card .ico{width:49px;height:49px;border-radius:13px;background:#e8f7f8;display:grid;place-items:center;font-size:25px;margin-bottom:16px}
+    .card h3{margin:0 0 8px;color:var(--navy);font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .about{background:var(--paper)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .about-panel{background:linear-gradient(145deg,#10243a,#1b6681);color:#fff;border-radius:18px;padding:34px;min-height:270px;display:flex;flex-direction:column;justify-content:space-between}
+    .about-panel strong{font-size:28px;line-height:1.2}.about-panel p{color:#d6e3ee}
+    .ticks{padding:0;list-style:none}.ticks li{padding:8px 0;color:#405266}.ticks li:before{content:"✓";color:#159baa;font-weight:800;margin-right:10px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:23px;border-radius:13px;background:var(--paper)}
+    .step b{display:inline-grid;place-items:center;width:34px;height:34px;background:var(--blue);color:#fff;border-radius:50%;margin-bottom:12px}
+    .step h3{margin:0 0 6px;color:var(--navy)}.step p{margin:0;color:var(--muted);font-size:14px}
+    .contact{background:var(--navy);color:#fff}.contact .section-head h2{color:#fff}.contact .section-head p{color:#c7d5e1}
+    .contact-box{max-width:760px;margin:auto;background:#fff;color:var(--ink);border-radius:17px;padding:30px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+    .contact-box h3{margin:0 0 5px;color:var(--navy)}.contact-box p{margin:0;color:var(--muted)}
+    .phone{font-size:22px;font-weight:800;color:var(--blue);display:block;margin-top:7px}
+    footer{background:#0a1929;color:#c5d1dc;padding:25px 0;font-size:13px}
+    .foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .note{font-size:12px;color:#8798a8;margin-top:10px}
+    .wa{position:fixed;right:20px;bottom:20px;background:#20bd65;color:#fff;border-radius:50px;padding:13px 18px;font-weight:800;box-shadow:0 7px 22px #0003;z-index:30}
+    @media(max-width:800px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:#10243a;padding:18px 4%;flex-direction:column;align-items:flex-start}nav.open{display:flex}.menu{display:block}.hero-grid,.about-grid{grid-template-columns:1fr}.hero-grid{padding:62px 0}.hero-art{min-height:260px}.cards{grid-template-columns:repeat(2,1fr)}.contact-box{grid-template-columns:1fr}.steps{grid-template-columns:1fr}}
+    @media(max-width:520px){section{padding:58px 0}.cards{grid-template-columns:1fr}.hero-art{min-height:230px}.mobility-icon{font-size:88px}.float{font-size:11px;padding:8px 10px}.contact-box{padding:23px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">ALL INDIA<br>MOBILITY SOLUTION<span>CONNECTING INDIA</span></a>
+    <button class="menu" aria-label="Open navigation" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#how">How It Works</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Mobility made simpler</div>
+        <h1>Connecting India.<br><span style="color:#75dce4">Moving Forward.</span></h1>
+        <p>One point of contact for mobility, transportation, vehicle rental, logistics and related mobility solutions. Tell us what you need — we’ll help you explore the right option.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/919075436787?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20mobility%20services." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          <a class="btn btn-outline" href="#services">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Mobility illustration">
+        <div class="orbit"><div class="mobility-icon">🚘</div><div class="float f1">🚚 Logistics</div><div class="float f2">🛵 Mobility</div><div class="float f3">📍 Across India</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head"><div class="eyebrow">What we do</div><h2>Mobility solutions for every journey</h2><p>Explore our service areas. Share your requirement with us to confirm availability, coverage and pricing.</p></div>
+      <div class="cards">
+        <article class="card"><div class="ico">🚗</div><h3>Vehicle Solutions</h3><p>Enquiries and assistance for personal, business and fleet mobility requirements.</p></article>
+        <article class="card"><div class="ico">🛵</div><h3>Electric Mobility</h3><p>Explore electric two-wheeler and other EV-related mobility options.</p></article>
+        <article class="card"><div class="ico">🚕</div><h3>Vehicle Rental</h3><p>Rental and on-demand vehicle requirements for individuals and organisations.</p></article>
+        <article class="card"><div class="ico">🚚</div><h3>Transport & Logistics</h3><p>Transport, goods movement and logistics-related enquiries.</p></article>
+        <article class="card"><div class="ico">🏢</div><h3>Business Mobility</h3><p>Mobility support for offices, businesses, institutions and teams.</p></article>
+        <article class="card"><div class="ico">🤝</div><h3>Mobility Assistance</h3><p>Tell us your requirement and we’ll help identify a suitable solution or service partner.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div>
+        <div class="eyebrow">About us</div><h2>Making mobility easier to access</h2>
+        <p>All India Mobility Solution aims to make it easier for customers to enquire about a range of mobility and transport needs through one convenient contact point.</p>
+        <ul class="ticks"><li>Multiple mobility service categories</li><li>Simple enquiry through phone or WhatsApp</li><li>Customer-focused assistance</li><li>Service coverage and availability confirmed on enquiry</li></ul>
+      </div>
+      <div class="about-panel"><div class="eyebrow">OUR APPROACH</div><strong>Your requirement.<br>One simple conversation.</strong><p>We listen to your needs, understand the location and requirement, and discuss the next suitable step.</p></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="container">
+      <div class="section-head"><div class="eyebrow">Easy process</div><h2>How it works</h2><p>Start with a simple enquiry. We’ll discuss the details with you.</p></div>
+      <div class="steps">
+        <div class="step"><b>1</b><h3>Share your requirement</h3><p>Tell us the service you need, your location and preferred timeline.</p></div>
+        <div class="step"><b>2</b><h3>Discuss the options</h3><p>We’ll respond to your enquiry and discuss availability, details and next steps.</p></div>
+        <div class="step"><b>3</b><h3>Confirm directly</h3><p>Proceed only after service scope, provider details, terms and pricing are confirmed.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head"><div class="eyebrow">Get in touch</div><h2>Let’s move forward together</h2><p>Contact us for mobility, transport, rental, logistics and other related enquiries.</p></div>
+      <div class="contact-box">
+        <div><h3>All India Mobility Solution</h3><p>Call or WhatsApp us to discuss your requirement.</p><a class="phone" href="tel:+919075436787">+91 90754 36787</a></div>
+        <a class="btn btn-primary" href="https://wa.me/919075436787?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20mobility%20services." target="_blank" rel="noopener">Message on WhatsApp</a>
+      </div>
+      <p class="note" style="text-align:center">Service availability, operating locations, prices and fulfilment are subject to confirmation. This website does not imply any government affiliation or nationwide operating coverage.</p>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container foot"><div><strong>ALL INDIA MOBILITY SOLUTION</strong><br>Connecting India. Moving Forward.</div><div>© <span id="year"></span> All rights reserved.</div></div></footer>
+<a class="wa" href="https://wa.me/919075436787?text=Hello%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp ↗</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));</script>
+</body>
+</html>
